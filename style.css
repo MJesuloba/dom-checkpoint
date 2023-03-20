@@ -1,0 +1,91 @@
+/* Shopping cart styles */
+
+/* Cart table */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .cart-table th,
+  .cart-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .cart-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .cart-table td:last-child {
+    font-weight: bold;
+  }
+  
+  /* Quantity input and buttons */
+  .quantity-input {
+    width: 50px;
+    text-align: center;
+  }
+  
+  .minus-btn,
+  .plus-btn {
+    display: inline-block;
+    background-color: #f2f2f2;
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .minus-btn:hover,
+  .plus-btn:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .delete-btn {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .delete-btn:hover {
+    color: red;
+  }
+  
+  /* Like button */
+  .like-btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .like-btn:hover,
+  .like-btn.liked {
+    color: red;
+  }
+  
+  .like-btn::before {
+    content: "\2665";
+    font-size: 14px;
+    line-height: 1;
+    display: inline-block;
+  }
+  
+  .like-btn.liked::before {
+    content: "\2661";
+  }
+  
+  /* Total price */
+  .total-price {
+    text-align: right;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
